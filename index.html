@@ -13,7 +13,7 @@
 
         body {
             font-family: system-ui, -apple-system, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #ffffff; /* Modification : Fond de la page en blanc */
             padding: 40px 20px;
             line-height: 1.6;
         }
@@ -30,10 +30,10 @@
         }
 
         details {
-            background: white;
+            background: #f5f5f5; /* Modification : Blocs de questions en gris clair */
             margin-bottom: 10px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Ombre adoucie pour le fond blanc */
             overflow: hidden;
         }
 
@@ -50,7 +50,7 @@
         }
 
         summary:hover {
-            background-color: #f9f9f9;
+            background-color: #DADADA; /* Modification : Effet de survol légèrement plus sombre que le gris de base */
         }
 
         summary::after {
@@ -71,8 +71,8 @@
 
         .answer {
             padding: 0 20px 20px 20px;
-            color: #555;
-            border-top: 1px solid #eee;
+            color: #444; /* Légèrement assombri pour une meilleure lisibilité sur le fond gris */
+            border-top: 1px solid #e0e0e0; /* Modification : Ligne de séparation adaptée au fond gris */
             animation: fadeIn 0.3s ease;
         }
 
