@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        details {
+            background: white;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 18px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+            transition: background-color 0.2s;
+        }
+
+        summary:hover {
+            background-color: #f9f9f9;
+        }
+
+        summary::after {
+            content: "+";
+            font-size: 1.4em;
+            font-weight: 300;
+            color: #666;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .answer {
+            padding: 0 20px 20px 20px;
+            color: #555;
+            border-top: 1px solid #eee;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .answer p {
+            margin-top: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Foire Aux Questions</h1>
+
+        <details>
+            <summary>Comment créer un compte ?</summary>
+            <div class="answer">
+                <p>Pour créer un compte, cliquez sur le bouton "S'inscrire" en haut à droite de la page. Remplissez le formulaire avec vos informations personnelles et validez votre email.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Quels sont les moyens de paiement acceptés ?</summary>
+            <div class="answer">
+                <p>Nous acceptons les cartes bancaires (Visa, Mastercard, American Express), PayPal, et les virements bancaires pour les commandes professionnelles.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Quel est le délai de livraison ?</summary>
+            <div class="answer">
+                <p>Les délais de livraison varient entre 2 et 5 jours ouvrés pour la France métropolitaine. Pour les DOM-TOM et l'international, comptez 7 à 15 jours ouvrés.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Comment retourner un article ?</summary>
+            <div class="answer">
+                <p>Vous disposez de 30 jours après réception pour retourner un article. Connectez-vous à votre espace client, sélectionnez la commande concernée et suivez les instructions de retour.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Comment contacter le service client ?</summary>
+            <div class="answer">
+                <p>Notre équipe est disponible du lundi au vendredi de 9h à 18h par email à contact@exemple.com ou par téléphone au 01 23 45 67 89.</p>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
